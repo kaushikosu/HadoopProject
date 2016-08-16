@@ -19,6 +19,8 @@ public class MaxTemperature {
 		job.setJarByClass(MaxTemperature.class);
 		job.setJobName("Max Temperature");
 		
+		System.out.println("Sample log");
+
 		FileInputFormat.addInputPath(job, new Path(args[0]));
 		FileOutputFormat.setOutputPath(job, new Path(args[1]));
 	
